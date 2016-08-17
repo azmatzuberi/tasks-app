@@ -1,0 +1,132 @@
+/*Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+
+/*CSS Reset*/
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+/*Custom CSS Styling*/
+
+/*Background Image*/
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*Lined Paper Background from: http://css3.wikidot.com/blog:lined-paper-with-css*/
+.paper {
+    font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+    width: 600px;
+    margin: 0 auto 10px;
+    padding: 6px 5px 4px 42px;
+    position: relative;
+    color: #444;
+    line-height: 20px;
+    border: 1px solid #d2d2d2;
+ 
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+ 
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    -o-background-size: 100% 20px;
+    background-size: 100% 20px;
+ 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+ 
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+.paper::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+}
+header {
+    background: #fff;
+    text-align: center;
+}
+/*Heading One Styling*/
+h1 {
+	font-size: 3rem;
+	color: #44619D;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-weight: 700; 
+	background: #fff;
+    display: inline-block;
+}
+
+/*Styling of "Task"*/
+h1 span {
+	color: #EEAF09;
+	text-shadow: 2px 2px 2px grey;
+}
+
+/*Log Out Button*/
+h3 {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #272822;
+    display: inline-block;
+    position: relative;
+    left: 400px;
+}
+
+/*Legend Styling*/
+legend {
+    font-size: 1rem;
+}
+
+/*Input Button Styling from: http://jsfiddle.net/vfUvZ/ */
+input[type=submit] {
+    margin-top: 15px;
+    padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+/*Login Page Styling*/
+
+/*Sign-in Section*/
+
+#sign-in {
+    top: 100px;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(34, 41, 73, 0.6);
+    border: 1px solid grey;
+    text-align: center;
+}
+
+h2 {
+    top: 300px;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+form {
+    margin-top: 35px;
+}
